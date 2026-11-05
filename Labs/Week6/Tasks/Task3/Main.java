@@ -6,6 +6,7 @@ public class Main {
         BankAccount ali=new BankAccount("4821","Ali",20000,new double[] {1000,2000,500});        
         BankAccount sara=new BankAccount("7930","Sara",8000,new double[] {500,500,500});        
 
+
         BankAccount copy=new BankAccount(ali);
         BankAccount deepCopy=new BankAccount(ali,true);
 
