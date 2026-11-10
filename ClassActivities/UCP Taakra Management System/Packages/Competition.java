@@ -7,6 +7,7 @@ public class Competition {
     private String venue;
     private String startTime;
     private ArrayList<Participant> participantList;
+    private Coordinator coordinator;
     private int size;
 
     public Competition(String id,String title,String venue,String time,int size){
@@ -27,6 +28,14 @@ public class Competition {
         for(int i=0;i<participantList.size();i++){
             System.out.println(participantList.get(i).getName());
         }
+    }
+
+    public void addCoordinator(Coordinator obj){
+        coordinator=obj;
+    }
+
+    public String getCoordinator(){
+        return coordinator.getName();
     }
 
     public String getTitle(){

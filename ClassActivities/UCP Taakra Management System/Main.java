@@ -17,5 +17,13 @@ public class Main {
         speedProgramming.getParticipants();
 
         ali.showRegisteredCompetitions();
+
+        Coordinator sara=new Coordinator("Sara Ali", "03174566789");
+
+        sara.addCompetition(speedProgramming);
+
+        System.out.println(speedProgramming.getCoordinator());
+        System.out.println("\nSara is managing: ");
+        sara.showCompetitions();
     }
 }
